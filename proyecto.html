@@ -1,62 +1,30 @@
-<!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Veterinaria</title>
-    <style>
-        body {
-            margin: 2cm;
-            font-family: Arial, sans-serif;
-        }
-        .menu {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-        }
-        .menu img {
-            height: 80px; 
-            margin-right: auto; 
-        }
-        .menu span {
-            font-weight: bold;
-            margin-left: 20px;
-            cursor: pointer;
-        }
-        .boton {
-            display: inline-block;
-            background-color: black;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 6px;
-            margin-left: 20px;
-            cursor: pointer;
-        }
-        h1 {
-            font-size: 2.5em; 
-            font-weight: bold;
-            margin-top: 40px;
-            margin-bottom: 10px;
-        }
-        .eslogan {
-            font-style: italic;
-            margin-bottom: 40px;
-        }
-    </style>
 </head>
 <body>
-
-    <div class="menu">
-        <img src="C:/Users/PC/Downloads/Imagen.jpg" alt="Logo"> <!-- Cambia la ruta por la correcta -->
-        <span>Iniciar Sesión</span>
-        <span>Crear Cuenta</span>
-        <div class="boton">Configuración</div>
-    </div>
-
+    <table width="100%">
+        <tr>
+            <td>
+                <img src="C:\Users\PC\OneDrive - Instituto Politecnico Nacional\Drive\ESCOM\Analisis\Proyecto\Imagenes\Analisis.jpg" width="300">
+            </td>
+            <td align="right">
+                <button onclick="window.location.href='login.html'">Iniciar Sesión</button>
+            </td>
+            <td align="right">
+                <button onclick="window.location.href='registro.html'">Crear Cuenta</button>
+            </td>
+            <td align="right">
+                <button onclick="window.location.href='configuracion.html'">Configuración</button>
+            </td>
+        </tr>
+    </table>
+    <hr>
     <h1>Veterinaria</h1>
-
-    <p class="eslogan">“Tu amigo merece lo mejor, nosotros te ayudamos a dárselo”</p>
-
-    <div class="boton">Agenda</div>
+    <p><i>“Tu amigo merece lo mejor, nosotros te ayudamos a dárselo”</i></p>
+    <p>
+        <button onclick="window.location.href='agenda.html'">Agenda</button>
+    </p>
 
 </body>
 </html>
