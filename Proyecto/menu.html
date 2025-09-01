@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Veterinaria</title>
+    <style>
+         .opciones {
+            display: grid;
+            grid-template-columns: repeat(3, 120px);
+            grid-template-rows: repeat(3, 120px);
+            gap: 50px;
+            justify-items: center;
+            align-items: center;
+        }
+        .opcion{
+            display: inline-block;
+            background-color: rgb(50, 92, 230);
+            color: white;
+            padding: 10px 10px;
+            border-radius: 6px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table width="100%">
+        <tr>
+            <td>
+                <img src="nuvira.png" width="300">
+            </td>
+            <td align="right">
+                <button onclick="window.location.href='login.html'">Iniciar Sesión</button>
+            </td>
+            <td align="right">
+                <button onclick="window.location.href='registro.html'">Crear Cuenta</button>
+            </td>
+            <td align="right">
+                <button onclick="window.location.href='configuracion.html'">Configuración</button>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Veterinaria</h1>
+    <p><i>“Tu amigo merece lo mejor, nosotros te ayudamos a dárselo”</i></p>
+    <p>
+        <button onclick="window.location.href='agenda.html'">Agenda</button>
+    </p>
+
+    <main>        
+        <div class="opciones">
+        <div class="opcion"><img src="inventario.png" alt="Icono" width="100" height="100"></div>
+        <div class="opcion"><img src="caja.avif" alt="Icono" width="100" height="100"></div>
+        <div class="opcion"><img src="veterinario.jpg" alt="Icono" width="100" height="100"></div>
+        <div class="opcion"><img src="citas.png" alt="Icono" width="100" height="100"></div>
+        <div class="opcion"><img src="estudios.png" alt="Icono" width="100" height="100"></div>
+        <div class="opcion"><img src="urgencias.png" alt="Icono" width="100" height="100"></div>
+        <div class="opcion"><img src="Pacientes.png" alt="Icono" width="100" height="100"></div>
+        <div class="opcion"><img src="Reportes.png" alt="Icono" width="100" height="100"></div>
+    </main>
+
+</body>
+</html>
