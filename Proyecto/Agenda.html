@@ -1,73 +1,109 @@
-<!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Agenda de citas médicas</title>
+    <title>Veterinaria</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
+         .opciones {
+            display: grid;
+            grid-template-columns: repeat(3, 120px);
+            grid-template-rows: repeat(25, 120px);
+            gap: 50px;
+            justify-items: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
         }
-        .container {
-            background: #fff;
-            padding: 10px 30px;
+        .opcion{
+            display: inline-block;
+            background-color: rgb(50, 92, 230);
+            color: white;
+            padding: 10px 10px;
             border-radius: 6px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.2);
-            width: 350px;
-        }
-        h2 {
-            text-align: center;
-        }
-        label {
-            display: block;
-            margin: 10px 0 5px;
-            font-weight: bold;
-        }
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        button {
-            background-color: #0d6efd;
-            color: #fff;
-            border: none;
-            padding: 10px;
-            width: 100%;
-            border-radius: 4px;
+            margin-left: 20px;
             cursor: pointer;
-            font-size: 16px;
-        }
-        button:hover {
-            background-color: #0b5ed7;
         }
     </style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
-    <div class="container">
-        <h2>Bienvenido a la agenda de citas médicas</h2>
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre">
+    <table width="100%">
+        <tr>
+            <td width="19%">
+                <img src="nuvira.jpg" width="300">
+            </td>
+            <td width="67%" align="right">
+                <button onclick="window.location.href='login.html'">Iniciar Sesión</button>
+            </td>
+            <td width="7%" align="right">
+                <button onclick="window.location.href='registro.html'">Crear Cuenta</button>
+            </td>
+            <td width="7%" align="right">
+                <button onclick="window.location.href='configuracion.html'">Configuración</button>
+            </td>
+        </tr>
+    </table>
+    <hr width="100%" size="5">
+	<h1><p style="text-align: center;">Veterinaria</p></h1>
+    <h2>“Tu amigo merece lo mejor, nosotros te ayudamos a dárselo”</h2>
+    <p>&nbsp;</p>
+<p>&nbsp;</p>
+   
+    <main>
+    <div class="opciones" style="text-align: center;">
+        <div class="opcion" style="margin: 10px auto;">
+            <img src="inventario.png" alt="Icono" width="100" height="100">
+            <p>
+                <button style="background-color:black; color:white;" onclick="window.location.href='agenda.html'">Inventario</button>
+            </p>
+        </div>
 
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido">
+        <div class="opcion" style="margin: 10px auto;">
+            <img src="caja.avif" alt="Icono" width="100" height="100">
+            <p>
+                <button style="background-color:black; color:white;" onclick="window.location.href='agenda.html'">Caja</button>
+            </p>
+        </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+        <div class="opcion" style="margin: 10px auto;">
+            <img src="veterinario.jpg" alt="Icono" width="100" height="100">
+            <p>
+                <button style="background-color:black; color:white;" onclick="window.location.href='agenda.html'">Veterinario</button>
+            </p>
+        </div>
 
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono">
+        <div class="opcion" style="margin: 10px auto;">
+            <img src="citas.png" alt="Icono" width="100" height="100">
+            <p>
+                <button style="background-color:black; color:white;" onclick="window.location.href='agenda.html'">Citas</button>
+            </p>
+        </div>
 
-            <button type="submit">Registrar paciente</button>
-        </form>
+        <div class="opcion" style="margin: 10px auto;">
+            <img src="estudios.png" alt="Icono" width="100" height="100">
+            <p>
+                <button style="background-color:black; color:white;" onclick="window.location.href='agenda.html'">Estudios</button>
+            </p>
+        </div>
+
+        <div class="opcion" style="margin: 10px auto;">
+            <img src="urgencias.png" alt="Icono" width="100" height="100">
+            <p>
+                <button style="background-color:black; color:white;" onclick="window.location.href='agenda.html'">Urgencias</button>
+            </p>
+        </div>
+
+        <div class="opcion" style="margin: 10px auto;">
+            <img src="Pacientes.png" alt="Icono" width="100" height="100">
+            <p>
+                <button style="background-color:black; color:white;" onclick="window.location.href='agenda.html'">Pacientes</button>
+            </p>
+        </div>
+
+        <div class="opcion" style="margin: 10px auto;">
+            <img src="Reportes.png" alt="Icono" width="100" height="100">
+            <p>
+                <button style="background-color:black; color:white;" onclick="window.location.href='agenda.html'">Reportes</button>
+            </p>
+        </div>
     </div>
+</main>
+
 </body>
 </html>
