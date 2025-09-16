@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analisis</title>
+<link href="css/IniciarSesion.css" rel="stylesheet" type="text/css">
+
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+	
+</head>
+<body>
+
+  <div class="navbar">Veterinaria</div>
+
+  <div class="container">
+    <h2>CREAR CUENTA</h2>
+    <form id="registroForm">
+      <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+      </div>
+      <div>
+        <label for="apellido1">Primer Apellido</label>
+        <input type="text" id="apellido1" name="apellido1">
+      </div>
+      <div>
+        <label for="apellido2">Segundo Apellido</label>
+        <input type="text" id="apellido2" name="apellido2">
+      </div>
+      <div>
+        <label for="fecha">Fecha de Nacimiento</label>
+        <input type="date" id="fecha" name="fecha">
+      </div>
+      <div class="full-width">
+        <label>Sexo</label>
+        <div class="gender-options">
+          <label><input type="radio" name="sexo" value="Masculino"> Masculino</label>
+          <label><input type="radio" name="sexo" value="Femenino"> Femenino</label>
+          <label><input type="radio" name="sexo" value="Prefiero no decirlo"> Prefiero no decirlo</label>
+        </div>
+      </div>
+      <div>
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo">
+      </div>
+      <div>
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" name="contrasena">
+      </div>
+      <div class="full-width">
+        <label for="celular">Teléfono Celular</label>
+        <input type="tel" id="celular" name="celular">
+      </div>
+      <div class="full-width" id="telefonosExtra">
+        <label>Teléfonos Fijos u Otros</label>
+        <input type="tel" name="telefonoExtra[]">
+      </div>
+      <div class="full-width">
+        <button type="button" class="add-btn" onclick="agregarTelefono()">Agregar otro teléfono</button>
+      </div>
+      <div class="full-width">
+        <label for="calle">Domicilio - Calle</label>
+        <input type="text" id="calle" name="calle">
+      </div>
+      <div>
+        <label for="ne">Num.Ext</label>
+        <input type="text" id="ne" name="ne">
+      </div>
+      <div>
+        <label for="ni">Num.Int (opcional)</label>
+        <input type="text" id="ni" name="ni">
+      </div>
+      <div>
+        <label for="col">Colonia</label>
+        <input type="text" id="col" name="col">
+      </div>
+      <div>
+        <label for="cp">Código Postal</label>
+        <input type="text" id="cp" name="cp">
+      </div>
+      <div class="full-width">
+        <label for="referencias">Referencias</label>
+        <input type="text" id="referencias" name="referencias">
+      </div>
+      <div class="photo-upload full-width">
+        <label for="foto">Foto (.jpg)</label>
+        <input type="file" id="foto" name="foto" accept=".jpg,.jpeg">
+      </div>
+      <div class="full-width">
+        <button type="submit" class="submit-btn">REGISTRARSE</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function agregarTelefono() {
+      const contenedor = document.getElementById('telefonosExtra');
+      const nuevoCampo = document.createElement('input');
+      nuevoCampo.type = 'tel';
+      nuevoCampo.name = 'telefonoExtra[]';
+      nuevoCampo.placeholder = 'Otro teléfono';
+      nuevoCampo.style.marginTop = '0.5rem';
+      contenedor.appendChild(nuevoCampo);
+    }
+  </script>
+
+</body>
+</html>

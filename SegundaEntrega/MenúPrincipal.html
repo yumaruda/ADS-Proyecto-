@@ -1,0 +1,122 @@
+<html>
+<head>
+    <title>Veterinaria</title>
+    <style>
+         .opciones {
+            display: grid;
+            grid-template-columns: repeat(4, 120px);
+            grid-template-rows: repeat(5, 150px);
+            gap: 50px;
+            justify-items: center;
+            align-items: center;
+			justify-content: center; 
+    		align-content: center;
+        }
+        .opcion{
+            display: inline-block;
+            background-color: rgb(50, 92, 230);
+            color: white;
+            padding: 10px 10px;
+            border-radius: 6px;
+            margin-left: 20px;
+            cursor: pointer;
+			flex-direction: column; 
+    		align-items: center; 
+        }
+    </style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+	
+<body style="background-image:url('fondo.png');  background-size: cover; background-repeat: no-repeat; background-position: center;">
+    <table width="100%">
+        <tr>
+            <td width="19%">
+          <img src="nuvira.png" width="300"alt=""/></td>
+          <td width="67%" align="right">
+                <button onclick="window.location.href='login.html'">Iniciar Sesión</button>
+            </td>
+            <td width="7%" align="right">
+                <button onclick="window.location.href='registro.html'">Crear Cuenta</button>
+            </td>
+            <td width="7%" align="right">
+                <button onclick="window.location.href='configuracion.html'">Configuración</button>
+            </td>
+        </tr>
+    </table>
+    <hr width="100%" size="5">
+	<h1><p style="text-align: center;">Veterinaria</p></h1>
+    <h2 style="text-indent: 50px;">
+    “Tu amigo merece lo mejor, nosotros te ayudamos a dárselo”
+</h2>
+    <p>&nbsp;</p>
+<p>&nbsp;</p>
+   
+    <main>
+    <div class="opciones" style="text-align: center;">
+        <div class="opcion" style="margin: 10px auto;">
+            <img src="inventario.png" alt="Icono" width="100" height="100">
+            <p>
+                <button style="background-color:black; color:white;" onclick="window.location.href='Inventario.html'">Inventario</button>
+            </p>
+        </div>
+
+        <div class="opcion" style="margin: 10px auto;">
+            <img src="caja.png" alt="Icono" width="100" height="100">
+            <p>
+                <button style="background-color:black; color:white;" onclick="window.location.href='Caja.html'">Caja</button>
+            </p>
+        </div>
+
+        <div class="opcion" style="margin: 10px auto;">
+            <img src="veterinario.jpg" alt="Icono" width="100" height="100">
+            <p>
+                <button style="background-color:black; color:white;" onclick="window.location.href='Veterinario.html'">Veterinario</button>
+            </p>
+        </div>
+
+        <div class="opcion" style="margin: 10px auto;">
+            <img src="citas.png" alt="Icono" width="100" height="100">
+            <p>
+                <button style="background-color:black; color:white;" onclick="window.location.href='Citas.html'">Citas</button>
+            </p>
+        </div>
+
+        <div class="opcion" style="margin: 10px auto;">
+            <img src="estudios.png" alt="Icono" width="100" height="100">
+            <p>
+                <button style="background-color:black; color:white;" onclick="window.location.href='Estudios.html'">Estudios</button>
+            </p>
+        </div>
+
+        <div class="opcion" style="margin: 10px auto;">
+            <img src="urgencias.png" alt="Icono" width="100" height="100">
+            <p>
+                <button style="background-color:black; color:white;" onclick="window.location.href='Urgencias.html'">Urgencias</button>
+            </p>
+        </div>
+
+        <div class="opcion" style="margin: 10px auto;">
+            <img src="Pacientes.png" alt="Icono" width="100" height="100">
+            <p>
+                <button style="background-color:black; color:white;" onclick="window.location.href='Paciente.html'">Paciente</button>
+            </p>
+        </div>
+
+        <div class="opcion" style="margin: 10px auto;">
+            <img src="Reportes.png" alt="Icono" width="100" height="100">
+            <p>
+                <button style="background-color:black; color:white;" onclick="window.location.href='Reporte.html'">Reportes</button>
+            </p>
+        </div>
+
+         <div class="opcion" style="margin: 10px auto;">
+            <img src="usuarios.jpg" alt="Icono" width="100" height="100">
+            <p>
+                <button style="background-color:black; color:white;" onclick="window.location.href='Usuarios.html'">Usuarios</button>
+            </p>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
