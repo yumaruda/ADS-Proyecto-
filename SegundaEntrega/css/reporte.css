@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('../images/fondo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #5d4037; 
+  margin: 0;
+  padding: 2rem;
+}
+
+table {
+  width: 95%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  background-color: #b2906e;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th {
+  background-color: #b2906e;
+  color: black;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+td {
+  border: 2px solid #000000;
+  padding: 1.5rem;
+}
+
+tr:nth-child(even) td {
+  background-color: #fffaf5; 
+}
+
+tr:nth-child(odd) td {
+  background-color: #fffaf5;
+}

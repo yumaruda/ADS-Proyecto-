@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crear Mascota</title>
+<link href="css/CrearMascota.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <div class="navbar">Veterinaria</div>
+
+  <div class="container">
+    <h2>REGISTRAR MASCOTA</h2>
+    <form>
+      <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+      </div>
+      <div>
+        <label for="especie">Especie</label>
+        <select id="especie" name="especie">
+          <option value="">Selecciona</option>
+          <option value="perro">Perro</option>
+          <option value="gato">Gato</option>
+          <option value="ave">Ave</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+      <div>
+        <label for="raza">Raza</label>
+        <input type="text" id="raza" name="raza">
+      </div>
+      <div>
+        <label for="color">Color</label>
+        <input type="text" id="color" name="color">
+      </div>
+      <div>
+        <label for="color_secundario">Color Secundario</label>
+        <input type="text" id="color_secundario" name="color_secundario">
+      </div>
+      <div>
+        <label for="tamano">Tamaño</label>
+        <select id="tamano" name="tamano">
+          <option value="">Selecciona</option>
+          <option value="pequeño">Pequeño</option>
+          <option value="mediano">Mediano</option>
+          <option value="grande">Grande</option>
+        </select>
+      </div>
+      <div>
+        <label for="peso">Peso (kg)</label>
+        <input type="number" id="peso" name="peso" step="0.1">
+      </div>
+      <div>
+        <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+      </div>
+      <div>
+        <label for="esterilizado">Esterilizado</label>
+        <select id="esterilizado" name="esterilizado">
+          <option value="">Selecciona</option>
+          <option value="true">Sí</option>
+          <option value="false">No</option>
+        </select>
+      </div>
+      <div>
+        <label for="fecha_registro">Fecha de Registro</label>
+        <input type="date" id="fecha_registro" name="fecha_registro">
+      </div>
+      <div class="full-width">
+        <label for="senas">Señas Particulares</label>
+        <input type="text" id="senas" name="senas">
+      </div>
+      <div class="photo-upload full-width">
+        <label for="foto">Foto de la Mascota (.jpg)</label>
+        <input type="file" id="foto" name="foto" accept=".jpg,.jpeg,.png">
+      </div>
+      <div class="full-width">
+        <button type="submit" class="submit-btn">REGISTRAR MASCOTA</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
